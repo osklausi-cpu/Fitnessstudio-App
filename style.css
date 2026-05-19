@@ -1,0 +1,27 @@
+.list-group {
+    list-style-type: none;
+}
+
+.list-item {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.list-item:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.input-container {
+    display: flex;
+    max-width: 300px;
+}
+
+.edit-form {
+    display: flex;
+    max-width: 600px;
+}
+
+.d-flex {
+    display: flex !important;
+}
+ 
