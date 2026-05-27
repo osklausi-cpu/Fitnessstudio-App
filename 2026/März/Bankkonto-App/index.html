@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bankkonto Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bank-app">
+        <h1>Mini Bankkonto</h1>
+        <div class="balance">
+            Kontostand: <span id="balance">0</span> € 
+        </div>
+
+        <input type="number" id="amount" placeholder="Betrag eingeben">
+        <div class="buttons">
+            <button id="deposit">Einzahlen</button>
+            <button id="withdraw">Abheben</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

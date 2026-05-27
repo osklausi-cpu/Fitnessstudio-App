@@ -1,0 +1,28 @@
+.divi{
+    display: flex;
+    justify-content: center;
+    }
+    
+    img{width: 6cm;
+        padding-top: 0.5cm;
+        height: 6cm;
+        
+        
+    }
+
+    .di{
+        width: 20%;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid gray;
+    padding: 1rem;
+    margin: 1rem;
+    }
+   
+    .h1{
+        padding-left: 1cm;
+    }
+    
+    .body{
+        background-color:rgb(88, 100, 223);
+    }

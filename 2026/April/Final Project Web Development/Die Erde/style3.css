@@ -1,0 +1,12 @@
+.body{
+    
+    background-image: url(../Bilder/erde2.png);
+}
+
+.text{
+    margin-top: 3cm;
+    text-align:left;
+font-style: italic;
+color: rgb(247, 246, 249);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

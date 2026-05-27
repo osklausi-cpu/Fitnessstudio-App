@@ -1,0 +1,121 @@
+
+
+
+body{
+   background-image: url(./Bilder/universum.png);
+}
+
+div p {
+    color: rgb(210, 222, 231);
+   font-size: large;
+}
+
+div{
+    margin:20px;
+    padding-top: 1%;
+}
+.ganze_fläche{ 
+     height:100px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+ .ganze_fläche div {
+width: 300px;
+transition:0.7s
+ }   
+
+ .text2{
+    color: black;
+ }
+
+ .text3{
+    color: black;
+ } 
+
+
+.h1{
+text-align: center;
+font-style: italic;
+color: rgb(223, 220, 240);
+text-decoration: underline;
+
+}
+
+.ganze_fläche div:hover{
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+
+
+
+img{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+a{
+    color: aqua;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  /*transition 0,5s → sorgt dafür dass das sidebar sich langsamer öffnet
+   (0.5 sekunden in dem Fall man kann frei entscheiden) */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x:hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display:block;
+    
+  }  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* @media screen in CSS ist eine Medienabfrage, 
+  die anzeigt, dass die darin enthaltenen CSS-Regeln für Bildschirmgeräte gelten */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .Öf{
+    color:rgb(223, 220, 240);
+    font-style: italic;
+    
+  }
+
+
+
+
+

@@ -1,0 +1,68 @@
+Aufgabe 1: Zahl verdoppeln mit ValueError Handling
+
+Kernidee:
+- Der Benutzer gibt etwas ein. Python interpretiert Eingaben als Strings.
+- int(input(...)) wandelt den String in eine Zahl um.
+Problem:
+- Wenn der Benutzer keine Zahl eingibt (z.B. "abc"), entsteht ein ValueError
+Lösung:
+- try... except ValueError empfängt diesen Fehler ab.
+- try = Versuche diesen Code auszuführen.
+- except = wenn der Fehler auftritt, führe diesen Block aus.
+Merksatz: immer bei Benutzereingaben prüfen, ob die Daten gültig konvertierbar sind.
+
+
+Aufgabe 2: Addition mit TypeError Handling
+Kernidee:
+-Funktion addiere(a, b) addiert zwei Werte.
+Problem:
+- Wenn z.B. a = 5 und b = "test" > Python weiß nicht, wie man Zahl + String addiert
+- Das löst einen TypeError aus.
+Lösung:
+- try ... except TypeError fängt diesen Fehler ab.
+- Hilfreich bei Funktionen, die mit unbekannten Eingaben rechnen sollen.
+Merksatz: TypeError treten auf, wenn der Datentyp nicht passt.
+
+Aufgabe 3: Division mit ZeroDivisionError Handling
+Kernidee:
+- Division durch 0 ist mathematisch nicht erlaubt.
+Problem:
+- a/b mit b = 0 -> Python wirft ZeroDivisionError
+Lösung:
+- try---except ZeroDivisionError verhindert, dass das Programm abstürzt.
+- Stattdessen gibt man eine Fehlermeldung aus und z.B. none zurück.
+Merksatz: immer kritische Operationen absichern, z.B, Division, Dateioperationen, 
+Datenbankzugriffe.
+
+Aufgabe 4: Listenindex mit IndexError & ValueError
+Kernidee:
+- Benutzer wählt ein Eleent aus einer Liste.
+Fehlerquellen:
+1. Benutzer gibt keine Zahl ein > ValueError
+2. Benutzer gibt Zahl außerhalb der Liste ein > IndexError
+Lösung:
+- Zwei seperate except-Blöcke fangen die Fehler ab.
+Merksatz: Bei Benutzereingaben in Datenstrukturen immer prüfen, ob die Eingabe gültig ist
+
+Aufgabe 5: Dictionary-Zugriff mit KeyError
+Kernidee:
+- Dictionary = Schlüssel-Wert-Paare, z.B. mitarbeiter["Daniel"] = 25.
+Problem:
+- Zugriff auf einen Schlüssel, der nicht existiert > KeyError
+Lösung:
+- try...except KeyError fängt ab und gibt eine Meldung "Name nicht gefunden" aus.
+Merksatz: Bei Dictionaries immer prüfen, ob ein Schlüssel existiert (key in dict) oder 
+KeyError abfangen.
+
+Aufgabe 6: Datei öffnen mit FileNotFoundError
+Keridee:
+- Python versucht, eine Datei zu öffnen (open("pfad", "r")).
+Problem:
+- Datei existiert nicht> FileNotFoundError
+Lösung:
+- try..except FileNotFoundError fänt den Fehler ab
+- Mit with open(...) as datei: wird die Datei automatisch geschlossen.
+Merksatz: Immer Dateioperationen absichern, besonders bei Benutzereingaben oder externen
+Dateien.
+
+Aufgabe 7: 

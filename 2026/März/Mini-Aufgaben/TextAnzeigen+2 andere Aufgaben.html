@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Übungen</title>
+</head>
+
+<body>
+
+<!-- 🟢 Aufgabe 1: Klick-Zähler -->
+<h2>Klick-Zähler</h2>
+<button id="btn1">Klick mich</button> <!-- Button zum Klicken -->
+<p id="anzeige1">0</p> <!-- Startwert 0 -->
+
+<!-- 🟢 Aufgabe 2: Text anzeigen -->
+<h2>Text anzeigen</h2>
+<input id="eingabe" placeholder="Text eingeben"> <!-- Eingabefeld -->
+<button id="btn2">Anzeigen</button> <!-- Button -->
+<p id="ausgabe2"></p> <!-- Hier wird Text angezeigt -->
+
+<!-- 🟢 Aufgabe 3: Gerade oder ungerade -->
+<h2>Gerade oder ungerade</h2>
+<input id="zahl" type="number"> <!-- Zahl eingeben -->
+<button id="btn3">Prüfen</button> <!-- Button -->
+<p id="ausgabe3"></p> <!-- Ergebnis -->
+
+<script>
+
+//// 🟢 Aufgabe 1: Klick-Zähler ////
+
+let counter = 0; // Variable speichert Anzahl der Klicks
+
+function klicken() {
+    counter++; // erhöht counter um 1 oder auch so geschrieben counter = counter + 1;
+    document.getElementById("anzeige1").innerText = counter; 
+    // zeigt neue Zahl im <p> an
+}
+
+// verbindet Button mit Funktion
+document.getElementById("btn1").addEventListener("click", klicken);
+
+
+//// 🟢 Aufgabe 2: Text anzeigen ////
+
+function anzeigen() {
+    const text = document.getElementById("eingabe").value; 
+    // holt den Text aus dem Input-Feld
+
+    document.getElementById("ausgabe2").innerText = text; 
+    // zeigt den Text im Absatz an
+}
+
+// Button klick → Funktion ausführen
+document.getElementById("btn2").addEventListener("click", anzeigen);
+
+
+//// 🟢 Aufgabe 3: Gerade oder ungerade ////
+
+function pruefen() {
+    const zahl = Number(document.getElementById("zahl").value); 
+    // liest Zahl aus Input und wandelt sie in Number um
+
+    if (zahl % 2 === 0) { 
+        // % = Modulo → Rest der Division durch 2
+        document.getElementById("ausgabe3").innerText = "Gerade Zahl";
+    } else {
+        document.getElementById("ausgabe3").innerText = "Ungerade Zahl";
+    }
+}
+
+// Button klick → Funktion ausführen
+document.getElementById("btn3").addEventListener("click", pruefen);
+
+</script>
+
+</body>
+</html>

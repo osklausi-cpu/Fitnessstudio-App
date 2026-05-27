@@ -1,0 +1,112 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seite</title>
+
+  <style>
+    .div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div">
+    <input id="nam" type="text" placeholder="Username">
+    <input type="email" id="Email" placeholder="E-Mail">
+    <input type="password" minlength="6" id="pass" placeholder="Password">
+
+    <button id="But">Registrieren</button>
+  </div>
+
+  <script>
+    const button = document.getElementById("But");
+
+    button.addEventListener("click", function () {
+      alert("Registrierung erfolgreich");
+    });
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrierung</title>
+
+  <style>
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 250px;
+      margin: 50px auto;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form class="form" id="form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="E-Mail">
+    <input type="password" id="password" placeholder="Passwort (min. 6 Zeichen)">
+    
+    <button type="submit">Registrieren</button>
+
+    <p id="message"></p>
+  </form>
+
+  <script>
+    const form = document.getElementById("form");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Seite NICHT neu laden
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      // Fehler prüfen
+      if (name === "" || email === "" || password === "") {
+        message.textContent = "Bitte alle Felder ausfüllen!";
+        message.className = "error";
+        return;
+      }
+
+      if (!email.includes("@")) {
+        message.textContent = "Ungültige E-Mail!";
+        message.className = "error";
+        return;
+      }
+
+      if (password.length < 6) {
+        message.textContent = "Passwort zu kurz!";
+        message.className = "error";
+        return;
+      }
+
+      // Erfolg
+      message.textContent = "Registrierung erfolgreich!";
+      message.className = "success";
+    });
+  </script>
+
+</body>
+</html>

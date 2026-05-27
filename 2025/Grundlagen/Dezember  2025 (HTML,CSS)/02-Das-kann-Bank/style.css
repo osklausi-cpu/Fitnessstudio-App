@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TOP BAR */
+.topbar {
+  top: 0;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+  background: white;
+  z-index: 1000;
+}
+
+.logo {
+  height: 40px;
+}
+
+.text {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search {
+  margin-left: auto;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(23, 87, 215);
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgb(206, 231, 239);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration:underline;}
+
+.anm {
+  color: rgb(23, 87, 215);
+  font-weight: 600;
+  
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 20px;
+  padding: 12px 20px;
+  background: rgb(237, 248, 248);
+  position: fixed; /* 👈 DAS hinzufügen */
+  top: 60px;
+  z-index: 999;
+  width: 100%;
+
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* DROPDOWN */
+.drownmenu {
+  position: absolute; /*Absolute: Dein Menü soll über den Bildern auftauchen
+                             Es soll nicht den Rest der Seite nach unten schieben
+                             Also: position: absolute → Menü „schwebt“ über dem Layout */
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  max-height: 0;
+  overflow: hidden;
+
+  background: white;
+  padding-left: 20px;
+  border-bottom: 1px solid #0b47b0;
+  transition: max-height 0.3s ease; /* trasition = öffne langsam,,, ease
+    = die Art (hier langsam starten) */
+  z-index: 10; /* über dem Bild */
+}
+
+
+.drownmenu p {
+  padding: 10px 0;
+  color: rgb(18, 59, 140);
+  cursor: pointer;
+}
+
+.drownmenu.open {
+  max-height: 300px;
+}
+
+/* BILDER */
+.hauptbild {
+  position: relative;
+  height: 90vh;
+  overflow: visible; /* wichtig */
+
+}
+.bild {
+  position: absolute;
+  inset: 0; /* top/right/bottom/left = 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bild1 {
+  display: flex;
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 75%);
+}
+
+.bild2 {
+  object-position: center 100px;
+  inset: auto 0 -200px 0;
+  z-index: 1;
+}
+
+.textimBild2 {
+  position: absolute; /* über dem Bild */
+  bottom: -170px; /* Abstand vom unteren Rand von Bild 2 */
+  left: 50%; /* horizontal zentriert */
+  transform: translateX(-50%); /* genau zentriert */
+  color: rgb(246, 247, 246);
+  text-align: left;
+  z-index: 3; /* über beiden Bildern */
+  width: 80%; /* optional, damit Text nicht zu breit */
+}
+
+.textimBild2 h3 {
+  margin: 0 0 10px 0; /* Abstand nach unten zum h1 */
+}
+
+.textimBild2 h1 {
+  margin: 0; /* Abstand nach oben zum h4 */
+
+}
+
+.satz0{
+   color: rgb(246 247 246 / 70%);
+}
+
+.text-block0{
+  font-size: 50px;  /* Schriftgröße */
+  
+}
+
+.textimBildfarbe1 {
+
+  color: rgb(0, 183, 255);
+
+}
+
+/* ✅ FIX: verhindert Hochrutschen */
+.text-block {
+  margin-top: 30px;
+}
+
+.text-block p {
+  margin: 0;
+}
+
+.text-block p + p {
+  margin-top: 10px;
+}
+
+.bild-spacer {
+  height: 200px; /* MUSS dem -200px von bild2 entsprechen
+  Warum du .bild-spacer brauchst:
+  -Ohne Spacer startet neuer Inhalt unter dem Bild, aber wird überdeckt 
+  -Der nächste div beginnt genau dort, wo Bild 2 endet*/
+  
+}
+
+.unterer-bereich {
+ padding: 30px;
+
+}
+
+.zumGirokonto{
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+.Abschnitt2 {
+  width: 80%;
+  margin: 0 auto;            /* Container mittig auf der Seite */
+  margin-top: 45px;
+  align-items: center;       /* Vertikal zentriert */
+  gap: 50px;                 /* Abstand zwischen Text und Bild */
+align-items: flex-start;
+}
+
+.textbereich {
+  flex: 1;
+}
+
+.bildbereich img {
+  width: 350px;
+  height: auto;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.Abschnitt2 {
+  width: 80%;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+
+
+
+/* ============================= */
+/* 📱 TABLET (max 1024px) */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  
+
+  .textimBild2 h1 {
+    font-size: 38px;
+  }
+
+  .Abschnitt2 {
+    width: 90%;
+  }
+
+  .bildbereich img {
+    width: 280px;
+  }
+}
+
+
+/* ============================= */
+/* 📱 HANDY (max 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+
+
+  /* TOPBAR */
+  .topbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* NAV */
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    top: 100px;
+  }
+
+  .nav-item {
+    
+    font-size: 14px;
+  }
+
+  /* HERO TEXT */
+  .textimBild2 {
+    width: 90%;
+    bottom: -120px;
+  }
+
+  .textimBild2 h1 {
+    font-size: 28px;
+  }
+
+  .text-block0 {
+    font-size: 30px;
+  }
+
+  /* Abschnitt 2 untereinander */
+  .Abschnitt2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+  }
+
+  .bildbereich img {
+    width: 100%;
+    
+  }
+
+  .bild-spacer {
+    height: 150px;
+  }
+
+
+}
+
+
+/* ============================= */
+/* 📱 KLEINE HANDYS (max 480px) */
+/* ============================= */
+@media (max-width: 480px) {
+
+
+  .textimBild2 h1 {
+    font-size: 22px;
+  }
+
+  .text-block0 {
+    font-size: 24px;
+  }
+
+  .zumGirokonto {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}

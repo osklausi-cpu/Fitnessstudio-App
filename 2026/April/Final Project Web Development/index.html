@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Das Sonnensystem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+   
+   
+    <h1 class="h1">Lustige Fakten über die Sonne und Planeten</h1>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <a
+        href="http://127.0.0.1:5500/2026/April/Final%20Project%20Web%20Development/Sterne/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Über Sterne</a
+      >
+      <a
+        href="http://127.0.0.1:5500/2026/April/Final%20Project%20Web%20Development/Seite%20(Aktuelles)/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Aktuelles</a
+      >
+      <a
+        href="http://127.0.0.1:5500/2026/April/Final%20Project%20Web%20Development/Die%20Erde/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Die Erde</a
+      >
+      <a
+        href="http://127.0.0.1:5500/Final%20Project%20Web%20Development/Shop/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Online Shop</a
+      >
+    </div>
+
+    
+    <!-- Hier wurde JavaScript verwendet z.B. function openNav() sorgt dafür dass
+    sich meine Sidebar öffnet -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <!-- <span> dient zur Gruppierung und Formatierung
+     von Inline-Inhalten innerhalb eines Textes oder Dokuments -->
+    <span
+      class="Öf"
+      style="font-size: 30px; cursor: pointer"
+      onclick="openNav()"
+      >&#9776; Öffnen</span
+    >
+
+    <!-- class sorgt dafür, dass dieses div mit Css verknüpft wird-->
+    <div class="ganze_fläche">
+      <div class="sonne">
+        <img src="./Bilder/Sonne.png" alt="Sonne" />
+        <p>
+          Die Sonne wird irgendwann die Erde verschlucken! In etwa 5 Milliarden
+          Jahren wird die Sonne ihren Wasserstoffvorrat aufgebraucht haben und
+          sich in einen riesigen roten Riesen verwandeln. In dieser Phase wird
+          sie die Erde wohl „verschlingen“, wenn sie sich ausdehnt. Keine Sorge,
+          das passiert noch lange nicht, aber es ist ein ziemlich krasser
+          Gedanke!
+        </p>
+        <a
+          href="https://www.youtube.com/watch?v=n2pOumNIGGM"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Nahaufnahmen der Sonne</a
+        >
+      </div>
+
+      <div class="Mond">
+        <img src="./Bilder/Mond.png" alt="Mond" />
+        <p>
+          Der Mond riecht wie... verbrannte Schießpulver! Astronauten, die den
+          Mond betreten haben, berichten, dass der Mondstaub einen sehr
+          ungewöhnlichen Geruch hat – irgendwie wie verbranntes Schießpulver
+          oder Metall. Also keine blumigen Düfte oder frische Luft, wenn du mal
+          auf dem Mond spazieren gehst!
+        </p>
+        <a
+          href="https://starwalk.space/de/infographics/10-mind-blowing-moon-facts"
+          target="_blank"
+          rel="noopener noreferrer"
+          >10 verblüffende Fakten zum Mond</a
+        >
+      </div>
+
+      <div class="Erde">
+        <img src="./Bilder/Erde.png" alt="Erde" />
+        <p class="text3">
+          Die Erde „singt“! Die Erde produziert tatsächlich Schwingungen und
+          Töne, die als „Erdbeben-Schwingungen“ bezeichnet werden. Aber keine
+          Sorge, es ist nicht wie ein Orgelkonzert oder Popmusik, sondern eher
+          wie eine Art stiller „Gesang“ – und du kannst ihn nur hören, wenn du
+          auf sehr empfindlichen Geräten lauschst. Es ist so, als würde die Erde
+          heimlich Musik spielen, während wir schlafen!
+        </p>
+        <a
+          href="https://www.google.com/search?q=erdger%C3%A4usche&oq=erdger%C3%A4usche&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIKCAEQABiABBiiBNIBCDUzMzZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:01a5d01e,vid:iEkcr0n_g2k,st:0"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Erdgeräusche</a
+        >
+      </div>
+
+      <div class="Mars">
+        <img src="./Bilder/mars.png" alt="Mars" />
+        <p>
+          Mars ist der „King der Staubstürme!“ Die Staubstürme auf dem Mars sind
+          so heftig, dass sie den ganzen Planeten einhüllen können – bis zu
+          Wochen lang! Stell dir vor, du gehst spazieren und plötzlich wird es
+          dunkel wie mitten in der Nacht, weil der Mars seine eigene Version von
+          „Schmuddelwetter“ bietet. Der Mars könnte in einer
+          Staubstorm-Weltmeisterschaft locker den ersten Platz holen!
+        </p>
+        <a
+          href="https://t3n.de/bildergalerie/mars-images"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Bilder vom Mars</a
+        >
+      </div>
+
+      <div class="Jupiter">
+        <img src="./Bilder/jupiter.png" alt="Jupiter" />
+        <p>
+          Jupiter ist so schwer, dass er „hinterlässt“ eine Spur im Universum!
+          Jupiter hat so viel Masse, dass er die Umlaufbahn der Erde minimal
+          beeinflusst. Wenn er sich bewegt, fühlt das sogar die Erde! Stell dir
+          vor, der Jupiter ist wie der riesige "Elefant" im Raum, der ständig
+          eine kleine Vibration durch das Universum schickt – aber keine Sorge,
+          er ist ein netter Elefant, der keine größeren Probleme macht.
+        </p>
+      </div>
+
+      <div class="Saturn">
+        <img src="./Bilder/saturn.png" alt="Saturn" />
+        <p class="text2">
+          Saturn hat die besten „Ringe“ im Universum! Saturn ist bekannt für
+          seine fantastischen Ringe – und die sind so beeindruckend, dass sie
+          wirklich wie das „Accessoire des Jahres“ wirken. Es ist fast so, als
+          hätte der Planet beschlossen, eine „Mega-Party zu schmeißen“ und sich
+          mit den schönsten Ringen zu schmücken. Und nein, es sind keine
+          Diamantringe, sondern aus Staub, Eis und Gestein – aber sie sind
+          trotzdem super cool!
+        </p>
+      </div>
+
+      <div class="Uranus">
+        <img src="./Bilder/uranus.png" alt="Uranus" />
+        <p>
+          Uranus ist „liegend“ unterwegs! Der Uranus hat eine sehr ungewöhnliche
+          Achsenneigung – er ist fast auf der Seite liegend! Stell dir vor, du
+          rollst auf deinem eigenen Planeten herum, als wärst du der coole Typ,
+          der gegen alle Regeln verstößt. Andere Planeten rotieren „ganz brav“
+          um ihre Achsen, aber Uranus sagt einfach: „Ich mach‘ mein eigenes
+          Ding!“
+        </p>
+      </div>
+
+      <div class="Neptun">
+        <img src="./Bilder/neptun.png" alt="Neptun" />
+        <p>
+          Neptun ist der Windkönig Er hat die stärksten Winde im Sonnensystem –
+          bis zu 2.100 km/h. Das ist schneller als der Schall (aber wegen der
+          dünnen Atmosphäre kein Überschallknall). Wenn du dort einen Drachen
+          steigen lassen willst – vergiss es. Du bist weg, bevor du „Whoosh“
+          sagen kannst.
+        </p>
+        <a
+          href="https://www.astronomie.de/das-sonnensystem/planeten-und-monde/neptun"
+          >Mehr dazu</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

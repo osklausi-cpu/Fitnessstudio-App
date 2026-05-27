@@ -1,0 +1,30 @@
+.box{
+
+    height: 40rem;
+    width: 96rem;
+    background-color: rgb(33, 141, 141);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+
+}
+
+.box1{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(24, 120, 205);
+    align-items: flex-end;
+    justify-content: flex-end;
+}

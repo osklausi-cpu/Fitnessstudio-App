@@ -1,0 +1,24 @@
+.RoteBox{
+    background-color:red;
+    height: 80px;
+    width: 100%;
+    display: flex;                /*„Ordne die Sachen in dieser Box flexibel an.“ */
+    flex-direction: column;        /*„Ordne die Sachen untereinander statt nebeneinander.“*/
+    justify-content: flex-end;     /*„Schiebe alles in dieser Box nach ganz unten.“*/    
+}
+
+.body{
+    margin: 0%;          
+    padding: 0%;
+}
+
+.grueneBox{
+    background-color: green;
+    height: 5px;
+    width: 100%;
+    
+}
+
+/*Die rote Box bleibt genau 80px hoch.
+Die grüne Box liegt in diesen 80px drin.
+Die grüne Box ist kein Rahmen – sie ist Teil des Inhalts.*/

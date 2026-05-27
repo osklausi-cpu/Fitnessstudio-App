@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahl verdoppeln</title>
+</head>
+<body>
+<input id="zahl" placeholder="Zahl eingeben" type="number">
+<button id="btnVerdoppeln">Verdoppeln</button>
+<p id="ausgabe"></p>
+
+<script>
+function verdoppeln() {
+    // 1️⃣ Zahl aus dem Input auslesen
+    let zahl = Number(document.getElementById("zahl").value);
+
+    // 2️⃣ Verdoppeln
+    let ergebnis = zahl * 2;
+
+    // 3️⃣ Ergebnis anzeigen
+    document.getElementById("ausgabe").innerText = ergebnis;
+}
+
+// 4️⃣ Event Listener für den Button
+document.getElementById("btnVerdoppeln").addEventListener("click", verdoppeln);
+</script>
+    
+</body>
+</html>

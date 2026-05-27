@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Burak",
+        "alter": 25,
+        "email": "burak@outlook.de",
+        "hobby": "Hobby Horsing"
+    },
+    {
+        "name": "Sophie",
+        "alter": 30,
+        "email": "sophie@example.com",
+        "hobby": "Yoga"
+    },
+    {
+        "name": "Ali",
+        "alter": 28,
+        "email": "ali@gmail.com",
+        "hobby": "Schwimmen"
+    },
+    {
+        "name": "d",
+        "alter": 2,
+        "email": "d",
+        "hobby": "d"
+    },
+    {
+        "name": "d",
+        "alter": 2,
+        "email": "d",
+        "hobby": "d"
+    }
+]

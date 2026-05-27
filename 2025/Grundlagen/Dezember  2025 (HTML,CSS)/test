@@ -1,0 +1,4 @@
+.Abschnitt2 > img {           /* 👉 Das > bedeutet: Nur direkte Bilder im Container, nicht Bilder innerhalb von <p>. */
+  width: 350px;              /* Bildgröße rechts */
+  height: auto;
+}
