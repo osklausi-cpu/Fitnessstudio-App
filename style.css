@@ -8,13 +8,14 @@
 }
 
 .list-item:nth-child(odd) {
-    background-color: whitesmoke;
+    background-color: rgb(247, 243, 243);
 }
 
 .input-container {
     display: flex;
     max-width: 300px;
 }
+
 
 .edit-form {
     display: flex;
